@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04318E51155700D70084F0D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 04318E50155700D70084F0D3 /* main.c */; };
+		04318E53155700D70084F0D3 /* NSString_TextAndNumberValidation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04318E52155700D70084F0D3 /* NSString_TextAndNumberValidation.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04318E4A155700D70084F0D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				04318E53155700D70084F0D3 /* NSString_TextAndNumberValidation.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSString+TextAndNumberValidation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04318E50155700D70084F0D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		04318E52155700D70084F0D3 /* NSString_TextAndNumberValidation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NSString_TextAndNumberValidation.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04318E49155700D70084F0D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04318E41155700D70084F0D3 = {
+			isa = PBXGroup;
+			children = (
+				04318E4F155700D70084F0D3 /* NSString+TextAndNumberValidation */,
+				04318E4D155700D70084F0D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04318E4D155700D70084F0D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04318E4F155700D70084F0D3 /* NSString+TextAndNumberValidation */ = {
+			isa = PBXGroup;
+			children = (
+				04318E50155700D70084F0D3 /* main.c */,
+				04318E52155700D70084F0D3 /* NSString_TextAndNumberValidation.1 */,
+			);
+			path = "NSString+TextAndNumberValidation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04318E4B155700D70084F0D3 /* NSString+TextAndNumberValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04318E56155700D70084F0D3 /* Build configuration list for PBXNativeTarget "NSString+TextAndNumberValidation" */;
+			buildPhases = (
+				04318E48155700D70084F0D3 /* Sources */,
+				04318E49155700D70084F0D3 /* Frameworks */,
+				04318E4A155700D70084F0D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSString+TextAndNumberValidation";
+			productName = "NSString+TextAndNumberValidation";
+			productReference = 04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04318E43155700D70084F0D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 04318E46155700D70084F0D3 /* Build configuration list for PBXProject "NSString+TextAndNumberValidation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04318E41155700D70084F0D3;
+			productRefGroup = 04318E4D155700D70084F0D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04318E4B155700D70084F0D3 /* NSString+TextAndNumberValidation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04318E48155700D70084F0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04318E51155700D70084F0D3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04318E54155700D70084F0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		04318E55155700D70084F0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		04318E57155700D70084F0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04318E58155700D70084F0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04318E46155700D70084F0D3 /* Build configuration list for PBXProject "NSString+TextAndNumberValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04318E54155700D70084F0D3 /* Debug */,
+				04318E55155700D70084F0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04318E56155700D70084F0D3 /* Build configuration list for PBXNativeTarget "NSString+TextAndNumberValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04318E57155700D70084F0D3 /* Debug */,
+				04318E58155700D70084F0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04318E43155700D70084F0D3 /* Project object */;
+}
