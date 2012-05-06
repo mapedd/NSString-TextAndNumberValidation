@@ -7,9 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04318E51155700D70084F0D3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 04318E50155700D70084F0D3 /* main.c */; };
-		04318E53155700D70084F0D3 /* NSString_TextAndNumberValidation.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 04318E52155700D70084F0D3 /* NSString_TextAndNumberValidation.1 */; };
+		04318E51155700D70084F0D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04318E50155700D70084F0D3 /* main.m */; };
+		04318E5B155702370084F0D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E5A155702370084F0D3 /* Foundation.framework */; };
+		04318E5E1557024F0084F0D3 /* NSString+TextAndNumberValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04318E5D1557024F0084F0D3 /* NSString+TextAndNumberValidation.m */; };
+		04318E8D155703190084F0D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04318E8B155703190084F0D3 /* InfoPlist.strings */; };
+		04318E90155703190084F0D3 /* TextAndNumberValidation_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 04318E8F155703190084F0D3 /* TextAndNumberValidation_test.m */; };
+		04318E97155706DA0084F0D3 /* NSString+TextAndNumberValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04318E5D1557024F0084F0D3 /* NSString+TextAndNumberValidation.m */; };
+		04318E98155707E80084F0D3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E62155702C00084F0D3 /* SenTestingKit.framework */; };
+		04318E99155707F30084F0D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E5A155702370084F0D3 /* Foundation.framework */; };
+		04318E9C1557087C0084F0D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E9B1557087C0084F0D3 /* Cocoa.framework */; };
+		04318E9D155708830084F0D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E9B1557087C0084F0D3 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04318E95155704D60084F0D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04318E43155700D70084F0D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04318E4B155700D70084F0D3;
+			remoteInfo = "NSString+TextAndNumberValidation";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		04318E4A155700D70084F0D3 /* CopyFiles */ = {
@@ -18,7 +36,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				04318E53155700D70084F0D3 /* NSString_TextAndNumberValidation.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +43,18 @@
 
 /* Begin PBXFileReference section */
 		04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSString+TextAndNumberValidation"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04318E50155700D70084F0D3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		04318E52155700D70084F0D3 /* NSString_TextAndNumberValidation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = NSString_TextAndNumberValidation.1; sourceTree = "<group>"; };
+		04318E50155700D70084F0D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04318E5A155702370084F0D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04318E5C1557024F0084F0D3 /* NSString+TextAndNumberValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextAndNumberValidation.h"; sourceTree = SOURCE_ROOT; };
+		04318E5D1557024F0084F0D3 /* NSString+TextAndNumberValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextAndNumberValidation.m"; sourceTree = SOURCE_ROOT; };
+		04318E62155702C00084F0D3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		04318E85155703190084F0D3 /* TextAndNumberValidation_test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAndNumberValidation_test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04318E8A155703190084F0D3 /* TextAndNumberValidation_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextAndNumberValidation_test-Info.plist"; sourceTree = "<group>"; };
+		04318E8C155703190084F0D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04318E8E155703190084F0D3 /* TextAndNumberValidation_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextAndNumberValidation_test.h; sourceTree = "<group>"; };
+		04318E8F155703190084F0D3 /* TextAndNumberValidation_test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextAndNumberValidation_test.m; sourceTree = "<group>"; };
+		04318E91155703190084F0D3 /* TextAndNumberValidation_test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextAndNumberValidation_test-Prefix.pch"; sourceTree = "<group>"; };
+		04318E9B1557087C0084F0D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +62,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04318E9C1557087C0084F0D3 /* Cocoa.framework in Frameworks */,
+				04318E5B155702370084F0D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04318E81155703190084F0D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04318E9D155708830084F0D3 /* Cocoa.framework in Frameworks */,
+				04318E98155707E80084F0D3 /* SenTestingKit.framework in Frameworks */,
+				04318E99155707F30084F0D3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +83,10 @@
 		04318E41155700D70084F0D3 = {
 			isa = PBXGroup;
 			children = (
+				04318E9B1557087C0084F0D3 /* Cocoa.framework */,
 				04318E4F155700D70084F0D3 /* NSString+TextAndNumberValidation */,
+				04318E591557021E0084F0D3 /* Frameworks */,
+				04318E88155703190084F0D3 /* TextAndNumberValidation_test */,
 				04318E4D155700D70084F0D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */,
+				04318E85155703190084F0D3 /* TextAndNumberValidation_test.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,10 +103,41 @@
 		04318E4F155700D70084F0D3 /* NSString+TextAndNumberValidation */ = {
 			isa = PBXGroup;
 			children = (
-				04318E50155700D70084F0D3 /* main.c */,
-				04318E52155700D70084F0D3 /* NSString_TextAndNumberValidation.1 */,
+				04318E50155700D70084F0D3 /* main.m */,
+				04318E5C1557024F0084F0D3 /* NSString+TextAndNumberValidation.h */,
+				04318E5D1557024F0084F0D3 /* NSString+TextAndNumberValidation.m */,
 			);
 			path = "NSString+TextAndNumberValidation";
+			sourceTree = "<group>";
+		};
+		04318E591557021E0084F0D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04318E62155702C00084F0D3 /* SenTestingKit.framework */,
+				04318E5A155702370084F0D3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			path = "NSString+TextAndNumberValidation";
+			sourceTree = "<group>";
+		};
+		04318E88155703190084F0D3 /* TextAndNumberValidation_test */ = {
+			isa = PBXGroup;
+			children = (
+				04318E8E155703190084F0D3 /* TextAndNumberValidation_test.h */,
+				04318E8F155703190084F0D3 /* TextAndNumberValidation_test.m */,
+				04318E89155703190084F0D3 /* Supporting Files */,
+			);
+			path = TextAndNumberValidation_test;
+			sourceTree = "<group>";
+		};
+		04318E89155703190084F0D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04318E8A155703190084F0D3 /* TextAndNumberValidation_test-Info.plist */,
+				04318E8B155703190084F0D3 /* InfoPlist.strings */,
+				04318E91155703190084F0D3 /* TextAndNumberValidation_test-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +160,25 @@
 			productReference = 04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */;
 			productType = "com.apple.product-type.tool";
 		};
+		04318E84155703190084F0D3 /* TextAndNumberValidation_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04318E92155703190084F0D3 /* Build configuration list for PBXNativeTarget "TextAndNumberValidation_test" */;
+			buildPhases = (
+				04318E80155703190084F0D3 /* Sources */,
+				04318E81155703190084F0D3 /* Frameworks */,
+				04318E82155703190084F0D3 /* Resources */,
+				04318E83155703190084F0D3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04318E96155704D60084F0D3 /* PBXTargetDependency */,
+			);
+			name = TextAndNumberValidation_test;
+			productName = TextAndNumberValidation_test;
+			productReference = 04318E85155703190084F0D3 /* TextAndNumberValidation_test.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,20 +200,77 @@
 			projectRoot = "";
 			targets = (
 				04318E4B155700D70084F0D3 /* NSString+TextAndNumberValidation */,
+				04318E84155703190084F0D3 /* TextAndNumberValidation_test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04318E82155703190084F0D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04318E8D155703190084F0D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04318E83155703190084F0D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04318E48155700D70084F0D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04318E51155700D70084F0D3 /* main.c in Sources */,
+				04318E51155700D70084F0D3 /* main.m in Sources */,
+				04318E5E1557024F0084F0D3 /* NSString+TextAndNumberValidation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04318E80155703190084F0D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04318E90155703190084F0D3 /* TextAndNumberValidation_test.m in Sources */,
+				04318E97155706DA0084F0D3 /* NSString+TextAndNumberValidation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04318E96155704D60084F0D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04318E4B155700D70084F0D3 /* NSString+TextAndNumberValidation */;
+			targetProxy = 04318E95155704D60084F0D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04318E8B155703190084F0D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04318E8C155703190084F0D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		04318E54155700D70084F0D3 /* Debug */ = {
@@ -171,6 +321,11 @@
 		04318E57155700D70084F0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -178,7 +333,38 @@
 		04318E58155700D70084F0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04318E93155703190084F0D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextAndNumberValidation_test/TextAndNumberValidation_test-Prefix.pch";
+				INFOPLIST_FILE = "TextAndNumberValidation_test/TextAndNumberValidation_test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		04318E94155703190084F0D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextAndNumberValidation_test/TextAndNumberValidation_test-Prefix.pch";
+				INFOPLIST_FILE = "TextAndNumberValidation_test/TextAndNumberValidation_test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -199,6 +385,14 @@
 			buildConfigurations = (
 				04318E57155700D70084F0D3 /* Debug */,
 				04318E58155700D70084F0D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04318E92155703190084F0D3 /* Build configuration list for PBXNativeTarget "TextAndNumberValidation_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04318E93155703190084F0D3 /* Debug */,
+				04318E94155703190084F0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
