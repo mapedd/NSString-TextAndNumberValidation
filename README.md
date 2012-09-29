@@ -8,7 +8,7 @@ Validates:
 - Polish PESEL number (Personal Number)
 - Polish NIP number
 - Polish REGON number
-- Email address using regulat expression
+- Email address using regular expression
 - Credit Card numbers - Luhn numbers
 - Bank Account numbers
 
