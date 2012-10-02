@@ -90,7 +90,7 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
 
 - (BOOL)isValidEmailAddress{
     NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\b[A-Z0-9._%-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b"
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\b[A-Z0-9._%-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b"
                                                                            options:NSRegularExpressionCaseInsensitive
                                                                              error:&error];
     
