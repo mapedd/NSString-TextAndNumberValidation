@@ -26,6 +26,8 @@
 
 - (BOOL)isNumeric;
 
+- (BOOL)isValidTelephoneNumber;
+
 - (NSString *)TKNumberFromLetter;
 
 @end

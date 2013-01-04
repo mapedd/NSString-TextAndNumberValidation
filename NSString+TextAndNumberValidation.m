@@ -269,7 +269,7 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
     
     IBANString  = [NSString stringWithFormat:@"%@%@", restSigns, first4Signs];
     
-    NSMutableString *lettersToNumbersString = [[[NSMutableString alloc] init] autorelease];
+    NSMutableString *lettersToNumbersString = [[NSMutableString alloc] init];
     
     
     for (int i = 0; i<IBANString.length; i++) {
@@ -341,6 +341,29 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
     NSCharacterSet *stringSet = [NSCharacterSet characterSetWithCharactersInString:self];
     isValid = [alphaNumbersSet isSupersetOfSet:stringSet];
     return isValid;
+}
+
+- (BOOL)isValidTelephoneNumber{
+    
+    NSString *plusless = nil;
+    if ([self rangeOfString:@"+"].location != NSNotFound) {
+        plusless = [self stringByReplacingOccurrencesOfString:@"+" withString:@""];
+    }
+    else{
+        plusless = self;
+    }
+    
+    NSString *spaceLess = [plusless stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    if (![spaceLess isNumeric]) {
+        return NO;
+    }
+    
+    if (!spaceLess.length >= 7) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 - (NSString *)TKNumberFromLetter{

@@ -15,6 +15,7 @@
     NSString *email;
     NSString *luhn;
     NSString *iban;
+    NSString *telephone;
 }
 
 @end

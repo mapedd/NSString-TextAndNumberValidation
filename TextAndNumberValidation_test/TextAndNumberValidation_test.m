@@ -16,23 +16,17 @@
 {
     [super setUp];
     
-    regon   = [[NSString alloc] initWithFormat:@"732065814"];
-    pesel   = [[NSString alloc] initWithFormat:@"44051401458"];
-    nip     = [[NSString alloc] initWithFormat:@"768-000-24-66"];
-    email   = [[NSString alloc] initWithFormat:@"example@example.com"];
-    luhn    = [[NSString alloc] initWithFormat:@"5490 1234 5678 9128"];
-    iban    = [[NSString alloc] initWithFormat:@"27 1140 2004 0000 3002 0135 5387"];
+    regon       = [[NSString alloc] initWithFormat:@"732065814"];
+    pesel       = [[NSString alloc] initWithFormat:@"44051401458"];
+    nip         = [[NSString alloc] initWithFormat:@"768-000-24-66"];
+    email       = [[NSString alloc] initWithFormat:@"example@example.com"];
+    luhn        = [[NSString alloc] initWithFormat:@"5490 1234 5678 9128"];
+    iban        = [[NSString alloc] initWithFormat:@"27 1140 2004 0000 3002 0135 5387"];
+    telephone   = [[NSString alloc] initWithFormat:@"+48 512 245 987"];
 }
 
 - (void)tearDown
 {
-    [regon release];
-    [pesel release];
-    [nip release];
-    [email release];
-    [luhn release];
-    [iban release];
-    
     [super tearDown];
 }
 
@@ -64,6 +58,10 @@
 - (void)testIban
 {
     STAssertTrue([iban isValidIBANNumber], @"isValidIBANNumber doesn't pass");
+}
+
+- (void)testTelephone{
+    STAssertTrue([telephone isValidTelephoneNumber], @"isValidTelephoneNumber doesn't pass");
 }
 
 @end
