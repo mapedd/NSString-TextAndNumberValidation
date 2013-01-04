@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NSRange TKNSRangeMake(NSUInteger location,NSUInteger length);
+
 @interface NSString (TextAndNumberValidation)
 
 - (BOOL)isValidEmailAddress;

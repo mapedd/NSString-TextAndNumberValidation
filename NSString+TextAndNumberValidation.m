@@ -345,6 +345,10 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
 
 - (BOOL)isValidTelephoneNumber{
     
+    if (!self.length) {
+        return NO;
+    }
+    
     NSString *plusless = nil;
     if ([self rangeOfString:@"+"].location != NSNotFound) {
         plusless = [self stringByReplacingOccurrencesOfString:@"+" withString:@""];
