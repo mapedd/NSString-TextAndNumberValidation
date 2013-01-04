@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "NSString+TextAndNumberValidation"
   s.version      = "0.1"
-  s.summary      = "NSString+TextAndNumberValidation - simple text and number validation for popular  formats: email, telephone, IBAN, LUHN"
+  s.summary      = "NSString+TextAndNumberValidation - simple text and number validation for popular  formats: email, telephone, IBAN, LUHN."
   s.homepage     = "https://github.com/mapedd/NSString-TextAndNumberValidation"
   s.license      = 'Apache'
   s.author       = { "Tomek Kuzma" => "mapedd@mapedd.com" }
