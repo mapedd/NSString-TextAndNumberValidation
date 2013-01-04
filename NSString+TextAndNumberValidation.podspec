@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mapedd/NSString-TextAndNumberValidation.git", :tag => "0.1" }
   s.platform     = :ios
   s.source_files = 'NSString+TextAndNumberValidation.{h,m}'
-  s.requires_arc = false
+  s.requires_arc = true
 end
