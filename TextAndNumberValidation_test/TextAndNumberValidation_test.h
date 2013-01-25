@@ -16,6 +16,7 @@
     NSString *luhn;
     NSString *iban;
     NSString *telephone;
+    NSString *zipCode;
 }
 
 @end

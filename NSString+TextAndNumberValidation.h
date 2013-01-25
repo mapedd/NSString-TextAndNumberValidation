@@ -26,6 +26,10 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length);
 
 - (BOOL)isValidIBANNumberForCountry:(NSString *)countryCode;
 
+- (BOOL)isValidPostalCodeForLocale:(NSLocale *)locale;
+
+- (BOOL)isValidPostalCode;
+
 - (BOOL)isNumeric;
 
 - (BOOL)isValidTelephoneNumber;

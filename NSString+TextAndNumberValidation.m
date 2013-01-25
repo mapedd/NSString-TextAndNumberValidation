@@ -335,6 +335,27 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
     return sum % 10 == 0;
 }
 
+- (BOOL)isValidPostalCodeForLocale:(NSLocale *)locale{
+    if ([locale.localeIdentifier rangeOfString:@"pl"].location != NSNotFound) {
+        
+        NSString *dashless = [self stringByReplacingOccurrencesOfString:@"-" withString:@""];
+        NSString *spaceless = [dashless stringByReplacingOccurrencesOfString:@" " withString:@""];
+        
+        if (spaceless.length == 5 && [spaceless isNumeric]) {
+            return YES;
+        }
+        
+        return NO;
+    }
+    
+    return YES;
+}
+
+- (BOOL)isValidPostalCode{
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"pl"];
+    return [self isValidPostalCodeForLocale:locale];
+}
+
 - (BOOL)isNumeric{
     BOOL isValid = NO;
     NSCharacterSet *alphaNumbersSet = [NSCharacterSet decimalDigitCharacterSet];

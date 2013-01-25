@@ -23,11 +23,16 @@
     luhn        = [[NSString alloc] initWithFormat:@"5490 1234 5678 9128"];
     iban        = [[NSString alloc] initWithFormat:@"27 1140 2004 0000 3002 0135 5387"];
     telephone   = [[NSString alloc] initWithFormat:@"+48 512 245 987"];
+    zipCode     = [[NSString alloc] initWithFormat:@"08-450"];
 }
 
 - (void)tearDown
 {
     [super tearDown];
+}
+
+- (void)testZipCode{
+    STAssertTrue([zipCode isValidPostalCode], @"zip code doesn't pass test");
 }
 
 - (void)testPESEL

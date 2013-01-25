@@ -32,6 +32,7 @@ int main(int argc, const char * argv[])
         NSLog(@"NIP   (%@) is valid: %d",NIP, isValidNIP);
         NSLog(@"REGON (%@) is valid: %d",REGON, isValidREGON);
         
+        
     }
     
     return 0;
