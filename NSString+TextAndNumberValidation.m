@@ -369,22 +369,15 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
     if (!self.length) {
         return NO;
     }
+
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"+-()[] "];
+    NSString *string = [[self componentsSeparatedByCharactersInSet:set] componentsJoinedByString:@""];
     
-    NSString *plusless = nil;
-    if ([self rangeOfString:@"+"].location != NSNotFound) {
-        plusless = [self stringByReplacingOccurrencesOfString:@"+" withString:@""];
-    }
-    else{
-        plusless = self;
-    }
-    
-    NSString *spaceLess = [plusless stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    if (![spaceLess isNumeric]) {
+    if (![string isNumeric]) {
         return NO;
     }
     
-    if (!spaceLess.length >= 7) {
+    if (!string.length >= 7) {
         return NO;
     }
     

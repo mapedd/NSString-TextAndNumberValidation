@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NSString+TextAndNumberValidation"
-  s.version      = "0.1"
+  s.version      = "0.11"
   s.summary      = "NSString category methods to simplify popular string standards validation."
   s.description = 'Validates:' \
                   '- Polish PESEL number (Personal Number)'  \
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/mapedd/NSString-TextAndNumberValidation"
   s.license      = 'Apache'
   s.author       = { "Tomek Kuzma" => "mapedd@mapedd.net" }
-  s.source       = { :git => "https://github.com/mapedd/NSString-TextAndNumberValidation.git", :tag => "0.1" }
+  s.source       = { :git => "https://github.com/mapedd/NSString-TextAndNumberValidation.git", :tag => "0.11" }
   s.platform     = :ios
   s.source_files = 'NSString+TextAndNumberValidation.{h,m}'
   s.requires_arc = true
