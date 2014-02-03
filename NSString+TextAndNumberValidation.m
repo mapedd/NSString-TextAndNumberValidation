@@ -315,7 +315,7 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
     
     NSInteger sum = 0;
     BOOL alt = NO;
-    for(int i = [noSpacesStirng length]-1; i >= 0; i--)
+    for(NSInteger i = noSpacesStirng.length - 1; i >= 0; i--)
     {
         NSString *number = [noSpacesStirng substringWithRange:TKNSRangeMake(i, 1)];
         NSInteger temp = [number integerValue];
