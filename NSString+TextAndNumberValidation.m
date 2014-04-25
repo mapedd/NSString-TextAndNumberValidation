@@ -365,10 +365,10 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
 }
 
 - (BOOL)isValidTelephoneNumber {
-    return [self isValidTelephoneNumberWIthMinimalLength:7u];
+    return [self isValidTelephoneNumberWithMinimalLength:7u];
 }
 
-- (BOOL)isValidTelephoneNumberWIthMinimalLength:(NSUInteger)minimalLength {
+- (BOOL)isValidTelephoneNumberWithMinimalLength:(NSUInteger)minimalLength {
     if (!self.length) {
         return NO;
     }
