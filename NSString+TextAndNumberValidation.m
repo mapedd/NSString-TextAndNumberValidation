@@ -364,12 +364,15 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
     return isValid;
 }
 
-- (BOOL)isValidTelephoneNumber{
-    
+- (BOOL)isValidTelephoneNumber {
+    return [self isValidTelephoneNumberWIthMinimalLength:7u];
+}
+
+- (BOOL)isValidTelephoneNumberWIthMinimalLength:(NSUInteger)minimalLength {
     if (!self.length) {
         return NO;
     }
-
+    
     NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"+-()[] "];
     NSString *string = [[self componentsSeparatedByCharactersInSet:set] componentsJoinedByString:@""];
     
@@ -377,7 +380,7 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
         return NO;
     }
     
-    if (!string.length >= 7) {
+    if (string.length < minimalLength) {
         return NO;
     }
     

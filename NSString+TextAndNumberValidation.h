@@ -33,6 +33,7 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length);
 - (BOOL)isNumeric;
 
 - (BOOL)isValidTelephoneNumber;
+- (BOOL)isValidTelephoneNumberWIthMinimalLength:(NSUInteger)minimalLength;
 
 - (NSString *)TKNumberFromLetter;
 
