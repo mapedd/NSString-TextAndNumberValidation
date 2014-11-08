@@ -309,15 +309,14 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
 
 - (BOOL)isValidLuhnNumber{
     
-    NSString *noSpacesStirng = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
-    noSpacesStirng = [noSpacesStirng stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    
+    NSString *noSpacesString = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    noSpacesString = [noSpacesString stringByReplacingOccurrencesOfString:@"-" withString:@""];
     
     NSInteger sum = 0;
     BOOL alt = NO;
-    for(NSInteger i = noSpacesStirng.length - 1; i >= 0; i--)
+    for(NSUInteger i = [noSpacesString length]; i != 0; i--)
     {
-        NSString *number = [noSpacesStirng substringWithRange:TKNSRangeMake(i, 1)];
+        NSString *number = [noSpacesString substringWithRange:TKNSRangeMake(i-1, 1)];
         NSInteger temp = [number integerValue];
         if(alt)
         {  
@@ -330,7 +329,6 @@ NSRange TKNSRangeMake(NSUInteger location,NSUInteger length){
         sum += temp;
         alt = !alt;
     }
-    
     
     return sum % 10 == 0;
 }
