@@ -32,41 +32,41 @@
 }
 
 - (void)testZipCode{
-    STAssertTrue([zipCode isValidPostalCode], @"zip code doesn't pass test");
+    XCTAssertTrue([zipCode isValidPostalCode], @"zip code doesn't pass test");
 }
 
 - (void)testPESEL
 {
-    STAssertTrue([pesel isValidPESEL], @"isValidPesel doesn't pass");
+    XCTAssertTrue([pesel isValidPESEL], @"isValidPesel doesn't pass");
 }
 
 - (void)testNIP
 {
-    STAssertTrue([nip isValidNIP], @"isValidNIP doesn't pass");    
+    XCTAssertTrue([nip isValidNIP], @"isValidNIP doesn't pass");    
 }
 
 - (void)testREGON
 {
-    STAssertTrue([regon isValidREGON], @"isValidRegon doesn't pass");
+    XCTAssertTrue([regon isValidREGON], @"isValidRegon doesn't pass");
 }
 
 - (void)testEmail
 {
-    STAssertTrue([email isValidEmailAddress], @"isValidEmailAddress doesn't pass");
+    XCTAssertTrue([email isValidEmailAddress], @"isValidEmailAddress doesn't pass");
 }
 
 - (void)testLuhn
 {
-    STAssertTrue([luhn isValidLuhnNumber], @"isValidLuhnNumber doesn't pass");
+    XCTAssertTrue([luhn isValidLuhnNumber], @"isValidLuhnNumber doesn't pass");
 }
 
 - (void)testIban
 {
-    STAssertTrue([iban isValidIBANNumber], @"isValidIBANNumber doesn't pass");
+    XCTAssertTrue([iban isValidIBANNumber], @"isValidIBANNumber doesn't pass");
 }
 
 - (void)testTelephone{
-    STAssertTrue([telephone isValidTelephoneNumber], @"isValidTelephoneNumber doesn't pass");
+    XCTAssertTrue([telephone isValidTelephoneNumber], @"isValidTelephoneNumber doesn't pass");
 }
 
 @end

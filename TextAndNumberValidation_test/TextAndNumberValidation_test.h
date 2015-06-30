@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface TextAndNumberValidation_test : SenTestCase{
+@interface TextAndNumberValidation_test : XCTestCase{
     NSString *regon;
     NSString *pesel;
     NSString *nip;

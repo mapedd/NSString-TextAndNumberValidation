@@ -13,7 +13,6 @@
 		04318E8D155703190084F0D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04318E8B155703190084F0D3 /* InfoPlist.strings */; };
 		04318E90155703190084F0D3 /* TextAndNumberValidation_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 04318E8F155703190084F0D3 /* TextAndNumberValidation_test.m */; };
 		04318E97155706DA0084F0D3 /* NSString+TextAndNumberValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04318E5D1557024F0084F0D3 /* NSString+TextAndNumberValidation.m */; };
-		04318E98155707E80084F0D3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E62155702C00084F0D3 /* SenTestingKit.framework */; };
 		04318E99155707F30084F0D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E5A155702370084F0D3 /* Foundation.framework */; };
 		04318E9C1557087C0084F0D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E9B1557087C0084F0D3 /* Cocoa.framework */; };
 		04318E9D155708830084F0D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04318E9B1557087C0084F0D3 /* Cocoa.framework */; };
@@ -47,8 +46,7 @@
 		04318E5A155702370084F0D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04318E5C1557024F0084F0D3 /* NSString+TextAndNumberValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextAndNumberValidation.h"; sourceTree = SOURCE_ROOT; };
 		04318E5D1557024F0084F0D3 /* NSString+TextAndNumberValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextAndNumberValidation.m"; sourceTree = SOURCE_ROOT; };
-		04318E62155702C00084F0D3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		04318E85155703190084F0D3 /* TextAndNumberValidation_test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAndNumberValidation_test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04318E85155703190084F0D3 /* TextAndNumberValidation_test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextAndNumberValidation_test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04318E8A155703190084F0D3 /* TextAndNumberValidation_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextAndNumberValidation_test-Info.plist"; sourceTree = "<group>"; };
 		04318E8C155703190084F0D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04318E8E155703190084F0D3 /* TextAndNumberValidation_test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextAndNumberValidation_test.h; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04318E9D155708830084F0D3 /* Cocoa.framework in Frameworks */,
-				04318E98155707E80084F0D3 /* SenTestingKit.framework in Frameworks */,
 				04318E99155707F30084F0D3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				04318E4C155700D70084F0D3 /* NSString+TextAndNumberValidation */,
-				04318E85155703190084F0D3 /* TextAndNumberValidation_test.octest */,
+				04318E85155703190084F0D3 /* TextAndNumberValidation_test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +110,6 @@
 		04318E591557021E0084F0D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				04318E62155702C00084F0D3 /* SenTestingKit.framework */,
 				04318E5A155702370084F0D3 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -176,8 +172,8 @@
 			);
 			name = TextAndNumberValidation_test;
 			productName = TextAndNumberValidation_test;
-			productReference = 04318E85155703190084F0D3 /* TextAndNumberValidation_test.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 04318E85155703190084F0D3 /* TextAndNumberValidation_test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -185,7 +181,8 @@
 		04318E43155700D70084F0D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 04318E46155700D70084F0D3 /* Build configuration list for PBXProject "NSString+TextAndNumberValidation" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -337,7 +334,6 @@
 		04318E57155700D70084F0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -350,7 +346,6 @@
 		04318E58155700D70084F0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -364,13 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextAndNumberValidation_test/TextAndNumberValidation_test-Prefix.pch";
 				INFOPLIST_FILE = "TextAndNumberValidation_test/TextAndNumberValidation_test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -378,13 +372,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextAndNumberValidation_test/TextAndNumberValidation_test-Prefix.pch";
 				INFOPLIST_FILE = "TextAndNumberValidation_test/TextAndNumberValidation_test-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
